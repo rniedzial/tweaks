@@ -25,3 +25,19 @@ Make your life easier and install Atom. Then install the following packages to h
 * language-inspec
 * linter-rubocop
 * linter-foodcritic
+
+# Atom Extension Association
+Atom includes a feature called "custom file types" which you can use by adding some entries into your config.cson that look like this:
+
+```yml
+core:
+  customFileTypes:
+    'source.yaml.cf': ['yml']
+```
+This will for example associate 'source.yaml.cf' with files ending in '.yml'.
+
+To get a list of all scope names registered in your Atom instance, open the Developer Tools Console and execute the following:
+
+```javascript
+Object.keys(atom.grammars.grammarsByScopeName).sort().join('\n')
+```
