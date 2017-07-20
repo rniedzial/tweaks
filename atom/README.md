@@ -11,11 +11,15 @@ Make your life easier and install Atom. Then install the following packages to h
 * language-python
 * autocomplete-python
 * python-tools
-* linter-flake9
+* linter-flake8
 
 ## General
 * sync-settings
 * git-plus
+* minimap
+* atom-beautify
+* file-icons
+* goto-definition
 
 ## Chef
 * language-ruby
